@@ -20,7 +20,7 @@
 " First, let's define an empty dictionary and assign it to the "palette"
 " variable. The # is a separator that maps with the directory structure. If
 " you get this wrong, Vim will complain loudly.
-let g:airline#themes#ninja#palette = {}
+let g:airline#themes#sky#palette = {}
 
 " First let's define some arrays. The s: is just a VimL thing for scoping the
 " variables to the current script. Without this, these variables would be
@@ -52,20 +52,20 @@ let s:C3 = [s:N1[0], s:N1[1], '', '', '']
 " Modified
 let s:M = '#00BCD4'
 
-let g:airline#themes#ninja#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
-let g:airline#themes#ninja#palette.normal_modified = {'airline_c': [s:M, '', '', '', '']}
+let g:airline#themes#sky#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+let g:airline#themes#sky#palette.normal_modified = {'airline_c': [s:M, '', '', '', '']}
 
-let g:airline#themes#ninja#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
-let g:airline#themes#ninja#palette.insert_modified = g:airline#themes#ninja#palette.normal_modified
+let g:airline#themes#sky#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+let g:airline#themes#sky#palette.insert_modified = g:airline#themes#ninja#palette.normal_modified
 
-let g:airline#themes#ninja#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
-let g:airline#themes#ninja#palette.visual_modified = g:airline#themes#ninja#palette.normal_modified
+let g:airline#themes#sky#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+let g:airline#themes#sky#palette.visual_modified = g:airline#themes#ninja#palette.normal_modified
 
-let g:airline#themes#ninja#palette.replace = g:airline#themes#ninja#palette.insert
-let g:airline#themes#ninja#palette.replace_modified = g:airline#themes#ninja#palette.normal_modified
+let g:airline#themes#sky#palette.replace = g:airline#themes#ninja#palette.insert
+let g:airline#themes#sky#palette.replace_modified = g:airline#themes#ninja#palette.normal_modified
 
-let g:airline#themes#ninja#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
-let g:airline#themes#ninja#palette.inactive_modified = g:airline#themes#ninja#palette.normal_modified
+let g:airline#themes#sky#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
+let g:airline#themes#sky#palette.inactive_modified = g:airline#themes#ninja#palette.normal_modified
 
 " Accents are used to give parts within a section a slightly different look or
 " color. Here we are defining a "red" accent, which is used by the 'readonly'
@@ -74,7 +74,7 @@ let g:airline#themes#ninja#palette.inactive_modified = g:airline#themes#ninja#pa
 " this means is that regardless of which section the part is defined in, it
 " will be red instead of the section's foreground color. You can also have
 " multiple parts with accents within a section.
-let g:airline#themes#ninja#palette.accents = {'red': ['#f44034', '', '', '']}
+let g:airline#themes#sky#palette.accents = {'red': ['#f44034', '', '', '']}
 
 " Here we define the color map for ctrlp.  We check for the g:loaded_ctrlp
 " variable so that related functionality is loaded iff the user is using
@@ -84,5 +84,5 @@ if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
 
-let g:airline#themes#ninja#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:C1, s:C2, s:C3)
+let g:airline#themes#sky#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:C1, s:C2, s:C3)
 
