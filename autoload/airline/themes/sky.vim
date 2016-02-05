@@ -56,16 +56,16 @@ let g:airline#themes#sky#palette.normal = airline#themes#generate_color_map(s:N1
 let g:airline#themes#sky#palette.normal_modified = {'airline_c': [s:M, '', '', '', '']}
 
 let g:airline#themes#sky#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
-let g:airline#themes#sky#palette.insert_modified = g:airline#themes#ninja#palette.normal_modified
+let g:airline#themes#sky#palette.insert_modified = g:airline#themes#sky#palette.normal_modified
 
 let g:airline#themes#sky#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
-let g:airline#themes#sky#palette.visual_modified = g:airline#themes#ninja#palette.normal_modified
+let g:airline#themes#sky#palette.visual_modified = g:airline#themes#sky#palette.normal_modified
 
-let g:airline#themes#sky#palette.replace = g:airline#themes#ninja#palette.insert
-let g:airline#themes#sky#palette.replace_modified = g:airline#themes#ninja#palette.normal_modified
+let g:airline#themes#sky#palette.replace = g:airline#themes#sky#palette.insert
+let g:airline#themes#sky#palette.replace_modified = g:airline#themes#sky#palette.normal_modified
 
 let g:airline#themes#sky#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
-let g:airline#themes#sky#palette.inactive_modified = g:airline#themes#ninja#palette.normal_modified
+let g:airline#themes#sky#palette.inactive_modified = g:airline#themes#sky#palette.normal_modified
 
 " Accents are used to give parts within a section a slightly different look or
 " color. Here we are defining a "red" accent, which is used by the 'readonly'
