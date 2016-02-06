@@ -10,6 +10,9 @@ let s:SKY = ["#00191a", "#003133", "#006064", "#0097A7", "#00BCD4"]
 let s:STAR = ["#e0e0e0", "#f5f5f5"]
 let s:STATUS = ["#80c684", "#f5be19", "#f44034"]
 
+" Indent line plugin.
+let g:indentLine_color_gui=s:SKY[1]
+
 " Default, no background is set to allow transparency.
 exe "hi Normal gui=NONE guifg=" s:STAR[0] "guibg=NONE"
 
@@ -47,7 +50,7 @@ exe "hi Title gui=NONE guifg=" s:SKY[4] "guibg=NONE"
 exe "hi WildMenu gui=NONE guifg=" s:STAR[1] "guibg=" s:SKY[4]
 
 " Visual aid.
-exe "hi Conceal gui=NONE guifg=" s:SKY[2] "guibg=NONE"
+exe "hi Conceal gui=NONE guifg=" s:SKY[1] "guibg=NONE"
 exe "hi Error gui=NONE guifg=" s:EARTH "guibg=NONE"
 exe "hi ErrorMsg gui=NONE guifg=" s:STATUS[2] "guibg=NONE"
 exe "hi Ignore gui=NONE guifg=" s:SKY[2] "guibg=NONE"
