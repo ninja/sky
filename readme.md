@@ -1,5 +1,3 @@
-# sky
-
 <img width="842" alt="sky" src="https://cloud.githubusercontent.com/assets/738256/12864989/24e1bd5c-cc54-11e5-9249-d7b595d206ce.png">
 
 ~/.config/nvim/plugins.vim
