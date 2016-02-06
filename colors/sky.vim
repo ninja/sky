@@ -10,9 +10,6 @@ let s:SKY = ["#00191a", "#003133", "#006064", "#0097A7", "#00BCD4"]
 let s:STAR = ["#e0e0e0", "#f5f5f5"]
 let s:STATUS = ["#80c684", "#f5be19", "#f44034"]
 
-" Indent line plugin.
-let g:indentLine_color_gui=s:SKY[1]
-
 " Default, no background is set to allow transparency.
 exe "hi Normal gui=NONE guifg=" s:STAR[0] "guibg=NONE"
 
