@@ -1,6 +1,6 @@
 hi clear
 
-if exists ('syntax_on')
+if exists ("syntax_on")
   syntax reset
 endif
 
@@ -117,3 +117,10 @@ exe "hi SpellBad gui=undercurl guisp=NONE guifg=" s:status_gui[2] "guibg=NONE ct
 exe "hi SpellCap gui=undercurl guisp=NONE guifg=" s:status_gui[2] "guibg=NONE ctermfg=" s:status_cterm[2] "ctermbg=NONE"
 exe "hi SpellLocal gui=undercurl guisp=NONE guifg=" s:status_gui[1] "guibg=NONE ctermfg=" s:status_cterm[1] "ctermbg=NONE"
 exe "hi SpellRare gui=undercurl guisp=NONE guifg=" s:status_gui[1] "guibg=NONE ctermfg=" s:status_cterm[1] "ctermbg=NONE"
+
+if has("nvim")
+  exe "hi EndOfBuffer gui=NONE guifg=" s:sky_gui[2] "guibg=NONE ctermfg=" s:sky_cterm[2] "ctermbg=NONE"
+  exe "hi TermCursor gui=NONE guifg=" s:star_gui[1] "guibg=" s:sky_gui[4] "ctermfg=" s:star_cterm[1] "ctermbg=" s:sky_cterm[4]
+  exe "hi TermCursorNC gui=NONE guifg=" s:sky_gui[4] "guibg=" s:sky_gui[0] "ctermfg=" s:sky_cterm[4] "ctermbg=" s:sky_cterm[0]
+endif
+
