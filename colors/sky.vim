@@ -118,6 +118,9 @@ exe "hi SpellCap gui=undercurl guisp=NONE guifg=" s:status_gui[2] "guibg=NONE ct
 exe "hi SpellLocal gui=undercurl guisp=NONE guifg=" s:status_gui[1] "guibg=NONE ctermfg=" s:status_cterm[1] "ctermbg=NONE"
 exe "hi SpellRare gui=undercurl guisp=NONE guifg=" s:status_gui[1] "guibg=NONE ctermfg=" s:status_cterm[1] "ctermbg=NONE"
 
+" JavaScript.
+exe "hi jsBraces gui=NONE guifg=" s:earth_gui[1] "guibg=NONE ctermfg=" s:earth_cterm[1] "ctermbg=NONE"
+
 if has("nvim")
   exe "hi EndOfBuffer gui=NONE guifg=" s:sky_gui[2] "guibg=NONE ctermfg=" s:sky_cterm[2] "ctermbg=NONE"
   exe "hi TermCursor gui=NONE guifg=" s:star_gui[1] "guibg=" s:sky_gui[4] "ctermfg=" s:star_cterm[1] "ctermbg=" s:sky_cterm[4]
