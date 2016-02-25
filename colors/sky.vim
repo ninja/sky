@@ -72,7 +72,7 @@ exe "hi WarningMsg gui=NONE guifg=" s:status_gui[1] "guibg=NONE ctermfg=" s:stat
 " Variable types.
 exe "hi Boolean gui=NONE guifg=" s:earth_gui[1] "guibg=NONE ctermfg=" s:earth_cterm[1] "ctermbg=NONE"
 exe "hi Character gui=NONE guifg=" s:earth_gui[0] "guibg=NONE ctermfg=" s:earth_cterm[0] "ctermbg=NONE"
-exe "hi Constant gui=NONE guifg=" s:sky_gui[2] "guibg=NONE ctermfg=" s:sky_cterm[2] "ctermbg=NONE"
+exe "hi Constant gui=NONE guifg=" s:earth_gui[1] "guibg=NONE ctermfg=" s:earth_cterm[1] "ctermbg=NONE"
 exe "hi Float gui=NONE guifg=" s:earth_gui[1] "guibg=NONE ctermfg=" s:earth_cterm[1] "ctermbg=NONE"
 exe "hi Function gui=NONE guifg=" s:star_gui[0] "guibg=NONE ctermfg=" s:star_cterm[0] "ctermbg=NONE"
 exe "hi Identifier gui=NONE guifg=" s:star_gui[0] "guibg=NONE ctermfg=" s:star_cterm[0] "ctermbg=NONE"
